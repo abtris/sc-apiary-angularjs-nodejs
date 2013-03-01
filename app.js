@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-
+app.enable('trust proxy');
 
 app.get('/item/1', function(req, res){
   var body = '{"id": 1, "name": "Item 1", "description": "Lorem ipsum ...", "done": false}';
